@@ -13,7 +13,7 @@ Notes and annotations from Egghead.io's [Data Structures and Algorithms in JavaS
 [02-queue-data-structure-in-javascript.js](src/02-queue-data-structure-in-javascript.js)
 
 ```bash
-$ node src/02-queue-data-structure-in-javascript
+$ node src/02-queue-data-structure-in-javascript.test.js
 ```
 
 A queue has the following features:
@@ -31,7 +31,7 @@ A queue has the following features:
 [03-priority-queue-javascript-data-structure.js](src/03-priority-queue-javascript-data-structure.js)
 
 ```bash
-$ node src/03-priority-queue-javascript-data-structure.js
+$ node src/03-priority-queue-javascript-data-structure.test.js
 ```
 
 A priority queue is simply a queue that manages two lists, allowing a user to
