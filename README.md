@@ -25,3 +25,15 @@ A queue has the following features:
     - peek - get value of next item to remove
     - length - get length of queue
     - isEmpty - determine if queue is empty or not
+
+## 03. Priority Queue JavaScript Data Structure
+
+[03-priority-queue-javascript-data-structure.js](src/03-priority-queue-javascript-data-structure.js)
+
+```bash
+$ node src/03-priority-queue-javascript-data-structure.js
+```
+
+A priority queue is simply a queue that manages two lists, allowing a user to
+specify if an item is priority or not, favouring dequeueing priority items over
+non-priority items
