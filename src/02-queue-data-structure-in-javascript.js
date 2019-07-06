@@ -7,7 +7,7 @@ const log = (...args) => console.log(...args);
  *
  * Handles items using FIFO strategy
  *
- * @returns {undefined}
+ * @returns {object}
  */
 function createQueue() {
   let queue = [];
