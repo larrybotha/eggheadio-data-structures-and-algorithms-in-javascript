@@ -71,10 +71,39 @@ Each node in a list has the following:
 
 A linked list has the following properties and methods:
 
-- tail - the last item in the list
+- head - value of first item in list
+- tail - items in the list after the head
 - length - current list length
 - push - add an item to the list
 - pop - remove an item from the list
 - get - get a specific item from the list
 - delete - delete a specific item from the list
 - isEmpty - boolean for length of list
+
+## 06. JavaScript Graph Data Structure
+
+[06-javascript-graph-data-structure.js](src/06-javascript-graph-data-structure.js)
+
+```bash
+$ node src/06-javascript-graph-data-structure.test.js
+```
+
+A graph is a collection of nodes or vertices.
+
+A node may point to another node, and these connections are called edges.
+
+A node has the following properties:
+
+- its key, used to identify it
+- a list of neighbours
+
+A graph has the following properties:
+
+- nodes - a list of its nodes
+- edges - a list of its connections
+- addNode - a function to add a new node
+- addEdge - a function to associate one node with another
+- getNode - a function to get a node by its key
+- directed - a directed graph will only add neighbours in one direction. A
+    non-directed graph will implicitly add a neighbour in both directions. i.e.
+    n1 will point to n2, and vice versa: `n1 <= => n2`
