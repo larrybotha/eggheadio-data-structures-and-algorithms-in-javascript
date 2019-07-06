@@ -8,5 +8,20 @@ Notes and annotations from Egghead.io's [Data Structures and Algorithms in JavaS
 **Table of Contents**
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## 02. Queue Data Structure in JavaScript
 
+[02-queue-data-structure-in-javascript.js](src/02-queue-data-structure-in-javascript.js)
 
+```bash
+$ node src/02-queue-data-structure-in-javascript
+```
+
+A queue has the following features:
+
+- uses FIFO; first item in, is first item out
+- has the following methods:
+    - enqueue - add item to beginning
+    - dequeue - remove item from end
+    - peek - get value of next item to remove
+    - length - get length of queue
+    - isEmpty - determine if queue is empty or not
