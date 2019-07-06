@@ -1,0 +1,31 @@
+{
+  "name": "eggheadio-data-structures-and-algorithms-in-javascript",
+  "version": "1.0.0",
+  "description": "Notes and annotations from Egghead.io's [Data Structures and Algorithms in JavaScript](https://egghead.io/courses/data-structures-and-algorithms-in-javascript)",
+  "main": "lint-staged.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "doctoc": "^1.4.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrybotha/eggheadio-data-structures-and-algorithms-in-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrybotha/eggheadio-data-structures-and-algorithms-in-javascript/issues"
+  },
+  "homepage": "https://github.com/larrybotha/eggheadio-data-structures-and-algorithms-in-javascript#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
