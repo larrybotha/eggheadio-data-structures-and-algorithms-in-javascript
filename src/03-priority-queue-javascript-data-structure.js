@@ -47,15 +47,15 @@ const createPriorityQueue = () => {
 };
 
 fc.assert(
-  fc.property(fc.array(fc.lorem()), ss => {
+  fc.property(fc.array(fc.string()), ss => {
     console.log('\n');
     log('============================');
 
     const q = createPriorityQueue();
     const values = ss.map((s, i) => {
-      const isPriority = i % 3 === 0;
+      const isPriority = (i + 1) % 3 === 0;
 
-      return {val: s, isPriority};
+      return {val: s, isPriority, index: i};
     });
     const nonPValues = values.filter(val => !Boolean(val.isPriority));
     const pValues = values.filter(val => Boolean(val.isPriority));
@@ -77,7 +77,9 @@ fc.assert(
         log('item is not priority: ', !dequeued.isPriority);
       }
 
-      log('next to remove: ', q.peek());
+      if (q.peek()) {
+        log('index of next to remove: ', q.peek().index);
+      }
 
       log('--------------------------');
     });
