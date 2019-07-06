@@ -37,3 +37,19 @@ $ node src/03-priority-queue-javascript-data-structure.test.js
 A priority queue is simply a queue that manages two lists, allowing a user to
 specify if an item is priority or not, favouring dequeueing priority items over
 non-priority items
+
+## 04. Stack Data Structure in JavaScript
+
+[04-stack-data-structure-in-javascript.js](src/04-stack-data-structure-in-javascript.js)
+
+```bash
+$ node src/04-stack-data-structure-in-javascript.test.js
+```
+
+A stack uses LIFO. A stack has the following methods / properties:
+
+- push - add to the stack
+- pop - remove an item from the stock
+- peek - get the next value from the stock
+- length - get the number of items in the stock
+- isEmpty - boolean if the stack has any items
