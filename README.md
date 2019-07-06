@@ -53,3 +53,28 @@ A stack uses LIFO. A stack has the following methods / properties:
 - peek - get the next value from the stock
 - length - get the number of items in the stock
 - isEmpty - boolean if the stack has any items
+
+## 05. Linked List Data Structure in JavaScript
+
+[05-linked-list-data-structure-in-javascript.js](src/05-linked-list-data-structure-in-javascript.js)
+
+```bash
+$ node src/05-linked-list-data-structure-in-javascript.test.js
+```
+
+In a linked list, each item has a reference to the next item in the list.
+
+Each node in a list has the following:
+
+- the value for the node
+- a reference to the next node if it exists, otherwise `null`
+
+A linked list has the following properties and methods:
+
+- tail - the last item in the list
+- length - current list length
+- push - add an item to the list
+- pop - remove an item from the list
+- get - get a specific item from the list
+- delete - delete a specific item from the list
+- isEmpty - boolean for length of list
