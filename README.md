@@ -109,3 +109,14 @@ A graph has the following properties:
 - directed - a directed graph will only add neighbours in one direction. A
     non-directed graph will implicitly add a neighbour in both directions. i.e.
     n1 will point to n2, and vice versa: `n1 <= => n2`
+
+## 07. Breadth First JavaScript Search Algorithm for Graphs
+
+[06-javascript-graph-data-structure.js](src/06-javascript-graph-data-structure.js)
+
+```bash
+$ node src/06-javascript-graph-data-structure.test.js
+```
+
+Breadth-first search is a graph searching algorithm that first explores as
+widely as possible in a graph, before exploring within adjacent nodes

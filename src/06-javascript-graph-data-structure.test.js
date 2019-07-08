@@ -31,6 +31,12 @@ fc.assert(
       log('is directed: ', graph.directed);
       log(graph.print());
 
+      log('breadthFirstSearch for ', xs2[0]);
+      graph.breadthFirstSearch(xs2[0], node => {
+        log('visited: ', node.key);
+      });
+      log('breadthFirstSearch ended');
+
       graph.nodes.map(node => {
         const {key, neighbours} = node;
         log('key: ', key);
