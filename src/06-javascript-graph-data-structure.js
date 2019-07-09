@@ -83,7 +83,7 @@ const createGraph = (directed = false) => {
           visited[currentNode.key] = true;
         }
 
-        currentNode.neighbours.map(node => {
+        (currentNode.neighbours || []).map(node => {
           if (!visited[node.key]) {
             queue.enqueue(node);
           }

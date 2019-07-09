@@ -31,11 +31,21 @@ fc.assert(
       log('is directed: ', graph.directed);
       log(graph.print());
 
-      log('breadthFirstSearch for ', xs2[0]);
-      graph.breadthFirstSearch(xs2[0], node => {
-        log('visited: ', node.key);
+      log('\n');
+      log('breadthFirstSearches');
+
+      [...xs1, ...xs2].map(x => {
+        log('start at: ', x);
+
+        graph.breadthFirstSearch(x, node => {
+          log('  ->: ', node.key);
+        });
+
+        log('---');
       });
+
       log('breadthFirstSearch ended');
+      log('\n');
 
       graph.nodes.map(node => {
         const {key, neighbours} = node;
