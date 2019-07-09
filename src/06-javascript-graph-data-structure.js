@@ -91,6 +91,27 @@ const createGraph = (directed = false) => {
       }
     },
 
+    depthFirstSearch(startingNodeKey, visitFn) {
+      const startingNode = this.getNode(startingNodeKey);
+      const visited = nodes.reduce((acc, node) => {
+        acc[node.key] = false;
+        return acc;
+      }, {});
+
+      function explore(node) {
+        if (visited[node.key]) {
+          return;
+        }
+
+        visitFn(node);
+        visited[node.key] = true;
+
+        node.neighbours.map(n => explore(n));
+      }
+
+      explore(startingNode);
+    },
+
     print() {
       return nodes.map(({key, neighbours}) => {
         return [key, neighbours.map(n => n.key).join(', ')]

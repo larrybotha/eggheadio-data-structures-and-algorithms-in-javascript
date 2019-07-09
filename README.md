@@ -121,3 +121,14 @@ $ node src/06-javascript-graph-data-structure.test.js
 Breadth-first search is a graph searching algorithm that first explores a
 provided node's own neighbours, before exploring the neighbours of adjacent
 nodes.
+
+## 08. Depth First JavaScript Search Algorithm for Graphs
+
+[06-javascript-graph-data-structure.js](src/06-javascript-graph-data-structure.js)
+
+```bash
+$ node src/06-javascript-graph-data-structure.test.js
+```
+
+Depth-fisrt search is a graph search algorithm that first explores each node in
+a graph before exploring neighbours of nodes in a graph.

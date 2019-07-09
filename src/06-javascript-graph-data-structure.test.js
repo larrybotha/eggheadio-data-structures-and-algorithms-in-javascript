@@ -36,6 +36,7 @@ fc.assert(
         log('breadthFirstSearch from last xs1 node');
         const startNodeKey = xs1.slice(-1).find(Boolean);
         log('start at: ', startNodeKey);
+
         const startNode = graph.getNode(startNodeKey);
         const neighbourKeys = startNode.neighbours.map(n => n.key);
 
@@ -50,6 +51,22 @@ fc.assert(
         });
 
         log('breadthFirstSearch ended');
+        log('\n');
+        log('---');
+        log('\n');
+        log('depthFirstSearch from last xs1 node');
+        log('start at: ', startNodeKey);
+
+        graph.depthFirstSearch(startNodeKey, node => {
+          log(
+            '  ->: ',
+            node.key,
+            neighbourKeys.indexOf(node.key) > -1
+              ? ` (neighbour of ${startNodeKey})`
+              : ''
+          );
+        });
+        log('depthFirstSearch ended');
         log('\n');
       }
 
