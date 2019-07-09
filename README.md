@@ -118,5 +118,6 @@ A graph has the following properties:
 $ node src/06-javascript-graph-data-structure.test.js
 ```
 
-Breadth-first search is a graph searching algorithm that first explores as
-widely as possible in a graph, before exploring within adjacent nodes
+Breadth-first search is a graph searching algorithm that first explores a
+provided node's own neighbours, before exploring the neighbours of adjacent
+nodes.

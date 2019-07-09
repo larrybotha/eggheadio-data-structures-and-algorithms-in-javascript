@@ -31,21 +31,27 @@ fc.assert(
       log('is directed: ', graph.directed);
       log(graph.print());
 
-      log('\n');
-      log('breadthFirstSearches');
+      if (xs1.length) {
+        log('\n');
+        log('breadthFirstSearch from last xs1 node');
+        const startNodeKey = xs1.slice(-1).find(Boolean);
+        log('start at: ', startNodeKey);
+        const startNode = graph.getNode(startNodeKey);
+        const neighbourKeys = startNode.neighbours.map(n => n.key);
 
-      [...xs1, ...xs2].map(x => {
-        log('start at: ', x);
-
-        graph.breadthFirstSearch(x, node => {
-          log('  ->: ', node.key);
+        graph.breadthFirstSearch(startNodeKey, node => {
+          log(
+            '  ->: ',
+            node.key,
+            neighbourKeys.indexOf(node.key) > -1
+              ? ` (neighbour of ${startNodeKey})`
+              : ''
+          );
         });
 
-        log('---');
-      });
-
-      log('breadthFirstSearch ended');
-      log('\n');
+        log('breadthFirstSearch ended');
+        log('\n');
+      }
 
       graph.nodes.map(node => {
         const {key, neighbours} = node;
