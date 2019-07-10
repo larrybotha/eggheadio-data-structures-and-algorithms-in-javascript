@@ -8,6 +8,16 @@ GitPod](https://gitpod.io/#https://github.com/larrybotha/eggheadio-data-structur
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
+
+- [02. Queue Data Structure in JavaScript](#02-queue-data-structure-in-javascript)
+- [03. Priority Queue JavaScript Data Structure](#03-priority-queue-javascript-data-structure)
+- [04. Stack Data Structure in JavaScript](#04-stack-data-structure-in-javascript)
+- [05. Linked List Data Structure in JavaScript](#05-linked-list-data-structure-in-javascript)
+- [06. JavaScript Graph Data Structure](#06-javascript-graph-data-structure)
+- [07. Breadth First JavaScript Search Algorithm for Graphs](#07-breadth-first-javascript-search-algorithm-for-graphs)
+- [08. Depth First JavaScript Search Algorithm for Graphs](#08-depth-first-javascript-search-algorithm-for-graphs)
+- [09. Tree Data Structure in JavaScript](#09-tree-data-structure-in-javascript)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 02. Queue Data Structure in JavaScript
@@ -132,3 +142,28 @@ $ node src/06-javascript-graph-data-structure.test.js
 
 Depth-fisrt search is a graph search algorithm that first explores each node in
 a graph before exploring neighbours of nodes in a graph.
+
+## 09. Tree Data Structure in JavaScript
+
+
+[09-tree-data-structure-in-javascript.js](src/09-tree-data-structure-in-javascript.js)
+
+```bash
+$ node src/09-tree-data-structure-in-javascript.test.js
+```
+
+A tree is a graph without cycles. A cycle is three or more nodes connected to
+make a circuit.
+
+A tree differs from a graph in that:
+
+- a graph has neighbours, while a tree has children
+- a graph is non-heirarchical, while a tree is heirarchical
+
+Each node in a tree:
+
+- has a key to identify the node
+- possibly children
+- a method to add children to the node
+
+A tree must have a root node.
