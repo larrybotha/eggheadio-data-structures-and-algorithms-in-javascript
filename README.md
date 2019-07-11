@@ -17,6 +17,7 @@ GitPod](https://gitpod.io/#https://github.com/larrybotha/eggheadio-data-structur
 - [07. Breadth First JavaScript Search Algorithm for Graphs](#07-breadth-first-javascript-search-algorithm-for-graphs)
 - [08. Depth First JavaScript Search Algorithm for Graphs](#08-depth-first-javascript-search-algorithm-for-graphs)
 - [09. Tree Data Structure in JavaScript](#09-tree-data-structure-in-javascript)
+- [10. Build a Binary Tree in JavaScript and Several Traversal Algorithms](#10-build-a-binary-tree-in-javascript-and-several-traversal-algorithms)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -167,3 +168,23 @@ Each node in a tree:
 - a method to add children to the node
 
 A tree must have a root node.
+
+## 10. Build a Binary Tree in JavaScript and Several Traversal Algorithms
+
+[10-build-a-binary-tree-in-javascript-and-several-traversal-algorithms.js](src/10-build-a-binary-tree-in-javascript-and-several-traversal-algorithms.js)
+
+```bash
+$ node src/10-build-a-binary-tree-in-javascript-and-several-traversal-algorithms.test.js
+```
+
+A binary tree is a tree that has a maximum of 2 child nodes per node.
+
+A binary tree has 3 types of traversal:
+
+- _in order_: visit a node's left node, then the current node, then its right
+    node
+- _pre order_: visit the current node, followed by its left node, followed by
+    its right node. This visits the tree while retaining its structure in the visits
+- _post order_: visit the current node's left, then right node, finally visiting
+    the current node. This results in all left nodes being visited first,
+    followed by all right nodes, and finally visiting the root node
