@@ -18,6 +18,7 @@ GitPod](https://gitpod.io/#https://github.com/larrybotha/eggheadio-data-structur
 - [08. Depth First JavaScript Search Algorithm for Graphs](#08-depth-first-javascript-search-algorithm-for-graphs)
 - [09. Tree Data Structure in JavaScript](#09-tree-data-structure-in-javascript)
 - [10. Build a Binary Tree in JavaScript and Several Traversal Algorithms](#10-build-a-binary-tree-in-javascript-and-several-traversal-algorithms)
+- [11. Sort an Array with a JavaScript do while Loop using Bubble Sort](#11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -188,3 +189,12 @@ A binary tree has 3 types of traversal:
 - _post order_: visit the current node's left, then right node, finally visiting
     the current node. This results in all left nodes being visited first,
     followed by all right nodes, and finally visiting the root node
+
+## 11. Sort an Array with a JavaScript do while Loop using Bubble Sort
+
+
+[11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort.js](src/11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort.js)
+
+```bash
+$ node src/11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort.test.js
+```
