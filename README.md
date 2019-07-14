@@ -192,9 +192,15 @@ A binary tree has 3 types of traversal:
 
 ## 11. Sort an Array with a JavaScript do while Loop using Bubble Sort
 
-
 [11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort.js](src/11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort.js)
 
 ```bash
 $ node src/11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort.test.js
 ```
+
+To perform bubble sort:
+
+- loop over an array
+- if current item is greater than next item, switch them
+- if a swap occurred, loop through the array again
+- coontinue looping until no swaps occur
