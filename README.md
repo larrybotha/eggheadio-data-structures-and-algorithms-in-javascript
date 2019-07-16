@@ -19,6 +19,7 @@ GitPod](https://gitpod.io/#https://github.com/larrybotha/eggheadio-data-structur
 - [09. Tree Data Structure in JavaScript](#09-tree-data-structure-in-javascript)
 - [10. Build a Binary Tree in JavaScript and Several Traversal Algorithms](#10-build-a-binary-tree-in-javascript-and-several-traversal-algorithms)
 - [11. Sort an Array with a JavaScript do while Loop using Bubble Sort](#11-sort-an-array-with-a-javascript-do-while-loop-using-bubble-sort)
+- [12. Sort an Array with a Nested for Loop using Insertion Sort in JavaScript](#12-sort-an-array-with-a-nested-for-loop-using-insertion-sort-in-javascript)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -204,3 +205,11 @@ To perform bubble sort:
 - if current item is greater than next item, switch them
 - if a swap occurred, loop through the array again
 - coontinue looping until no swaps occur
+
+## 12. Sort an Array with a Nested for Loop using Insertion Sort in JavaScript
+
+[12-sort-an-array-with-a-nested-for-loop-using-insertion-sort-in-javascript.js](src/12-sort-an-array-with-a-nested-for-loop-using-insertion-sort-in-javascript.js)
+
+```bash
+$ node src/12-sort-an-array-with-a-nested-for-loop-using-insertion-sort-in-javascript.test.js
+```
