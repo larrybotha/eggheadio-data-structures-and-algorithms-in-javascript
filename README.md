@@ -213,3 +213,9 @@ To perform bubble sort:
 ```bash
 $ node src/12-sort-an-array-with-a-nested-for-loop-using-insertion-sort-in-javascript.test.js
 ```
+
+Insertion sort works by:
+
+- iterating over a nested loop
+- takes the first item of a list and assumes we have a sorted list of length 1
+- compare the next item, and place it before or after the first item
